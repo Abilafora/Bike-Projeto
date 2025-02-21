@@ -49,6 +49,8 @@ public class Estoque {
 			System.out.println("                                                     ");
 			
 			
+			
+			
 			try {
 				opcao = leia.nextInt();
 			}catch(AnnotationTypeMismatchException e){
@@ -164,10 +166,11 @@ public class Estoque {
 
 					break;
 				case 5:
-					
-					System.out.println("Apagar a Produto\n");
+					   
+					System.out.println("Apagar a Produto \n ");
 					
 					System.out.println("Digite o número de identificação do produto: ");
+					// comentar 
 					numero = leia.nextInt();
 						
 					bicicletas.deletar(numero);
