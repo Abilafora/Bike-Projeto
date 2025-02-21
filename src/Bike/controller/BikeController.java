@@ -85,9 +85,16 @@ public class BikeController implements BikeRepository {
 
 	@Override
 	public void deletar(int numero) {
-		// TODO Auto-generated method stub
+		 var bike = buscarNaCollection(numero);
+			
+			if (bike != null) {
+				if(listarBikes.remove(bike) == true)
+					System.out.println("\nBike do: " + numero + " foi deletada com sucesso!");
+			}else
+				System.out.println("\nBike do número: " + numero + " não foi encontrada!");
+	    }
 		
-	}
+	
 
 	@Override
 	public void saidaEstoque(int numero) {
